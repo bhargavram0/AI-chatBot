@@ -18,6 +18,12 @@ const userData = {
   },
 };
 
+
+const chatHistory = [];
+const initialInputHeight = messageInput.scrollHeight;
+
+
+
 const createMessageElement = (content, ...classes) => {
   const div = document.createElement("div");
   div.classList.add("message", ...classes);
