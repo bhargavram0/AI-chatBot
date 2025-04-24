@@ -7,7 +7,7 @@ const fileCancelButton = fileUploadWrapper.querySelector("#file-cancel");
 const chatbotToggler = document.querySelector("#chatbot-toggler");
 const closeChatbot = document.querySelector("#close-chatbot");
 
-const API_KEY = "YOUR_APIKEY";
+const API_KEY = "AIzaSyACAmB7J5wS-IQftfi0uJcQN-4ZXnsONa0";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 const userData = {
@@ -17,12 +17,6 @@ const userData = {
     mime_type: null,
   },
 };
-
-
-// const chatHistory = [];
-// const initialInputHeight = messageInput.scrollHeight;
-
-
 
 const createMessageElement = (content, ...classes) => {
   const div = document.createElement("div");
